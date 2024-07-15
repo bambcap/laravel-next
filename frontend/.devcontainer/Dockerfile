@@ -5,7 +5,7 @@ ENV TZ Asia/Tokyo
 WORKDIR /workspace
 
 COPY ./ ./
-RUN apk update && apk add bash
+RUN apk update && apk add bash && apk add git
 RUN npm install
 
 CMD ["npm", "run", "dev"]

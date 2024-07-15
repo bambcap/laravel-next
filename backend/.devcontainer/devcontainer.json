@@ -9,6 +9,7 @@
 	"service": "laravel.test", // Docker Composeの接続サービス名
 	"remoteUser": "root",
 	"workspaceFolder": "/var/www/html", // Workspaceのフォルダを指定
+    "postAttachCommand": "git config --global --add safe.directory ./",
     "customizations": {
         "vscode": {
             "extensions": [ // コンテナ内でインストールするVS Codeの拡張機能ID
@@ -39,7 +40,8 @@
             "settings": {
                 "editor.fontFamily": "Cica",
                 "editor.fontSize": 16,
-                "files.autoSave": "afterDelay"
+                "files.autoSave": "afterDelay",
+                "git.openRepositoryInParentFolders": "always"
             }
         }
     }

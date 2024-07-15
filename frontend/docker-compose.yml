@@ -10,6 +10,7 @@ services:
       - .:/workspace
     networks:
       - backend_sail
+    working_dir: /workspace
 networks:
   backend_sail:
     external: true
