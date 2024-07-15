@@ -1,0 +1,15 @@
+
+{
+    "name": "Next.js",
+    "dockerComposeFile": "../docker-compose.yml",
+    "workspaceFolder": "/workspace",
+    "service": "frontend",
+    "remoteUser": "root",
+    "customizations": {
+        "vscode": {
+	    "extenstions": [
+	        "dbaeumer.vscode-eslint"
+	    ]
+	}
+    }
+}

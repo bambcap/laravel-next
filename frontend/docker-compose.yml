@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/workspace
+    networks:
+      - backend_sail
+networks:
+  backend_sail:
+    external: true
